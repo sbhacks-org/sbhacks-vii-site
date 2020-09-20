@@ -190,6 +190,13 @@ a {
   width: 100vw;
 }
 
+.mailing-text {
+  position: relative;
+  letter-spacing: 3px;
+  font-size: 1.2vw;
+  width: 100vw;
+}
+
 .sponsor-item {
   font-size: 12px;
   letter-spacing: 1px;
@@ -1054,6 +1061,9 @@ a {
 @media screen and (max-width: 600px) {
   .info {
     font-size: 15px;
+  }
+  .mailing-text {
+    font-size: 12px!important;
   }
   .alertContainer {
     bottom: 0;
