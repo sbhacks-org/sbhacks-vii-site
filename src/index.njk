@@ -5,13 +5,11 @@ title: SB Hacks VII
 {% extends "layouts/base.njk" %}
 
 {% block body %}
+<div id="message">
+{% block message %}
+{% endblock %}
+</div>
 <div id = "landing">
-  <div class="mobNavBar">
-    <div id="navLinks">
-      <a href="https://sbhacksvi.herokuapp.com/">SB HACKS VI</a>
-    </div>
-  </div>
-
   <div id="navBar">
     <ul>
       <li><a href="https://sbhacksvi.herokuapp.com/">SB HACKS VI</a></li>
@@ -55,8 +53,20 @@ title: SB Hacks VII
   <div id="centerInfo">
     <img src="/webAssets/Asset 22.svg" id="centerLogo">
     <div class="info-container">
-      <h2 class="info-item" id="info">January 15-17, 2021 | Online</h2>
+      <h2 class="info info-item">January 15-17, 2021 | Online</h2>
     </div>
+    <form id="mailinglist" action="/api/mailinglist" method="post">
+      <div class="info-container">
+        <h2 class="mailing-text">Subscribe to our mailing list for updates!</h2>
+        <div class="aligned">
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" placeholder="youremail@example.com" required name="email">
+          <button type="submit" aria-label="Submit">
+            <img src="/webAssets/Asset 14.svg" alt="Submit">
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </div>
 {% endblock %}
