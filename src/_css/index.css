@@ -7,7 +7,6 @@
   position: relative;
   overflow: hidden;
   min-height: 700px;
-  top: -78px;
 }
 
 .mobNavBar {
@@ -1930,7 +1929,7 @@ a {
 
 #message {
   font-size: 24px;
-  padding: 24px;
-  position: relative;
+  padding: 16px;
+  position: fixed;
   z-index: 400;
 }
