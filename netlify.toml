@@ -12,3 +12,7 @@
   from = "/api/*"
   to = "/.netlify/functions/:splat"
   status = 200
+
+[[redirects]]
+  from = "/recruit"
+  to = "https://forms.gle/SezeFbrC3SQ1Nouz7"
