@@ -23,6 +23,7 @@
     "@11ty/eleventy": "^0.11.0"
   },
   "devDependencies": {
+    "@tailwindcss/ui": "^0.6.2",
     "autoprefixer": "^9.8.6",
     "cross-env": "^7.0.2",
     "husky": "^4.3.0",
