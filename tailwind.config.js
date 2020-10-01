@@ -1,5 +1,9 @@
 module.exports = {
-  plugins: [require("@tailwindcss/ui")],
+  plugins: [
+    require("@tailwindcss/ui"),
+    require("tailwindcss-blend-mode")(),
+    require("tailwindcss-image-rendering")(),
+  ],
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
