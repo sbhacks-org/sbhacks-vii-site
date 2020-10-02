@@ -21,6 +21,9 @@ module.exports = {
           900: "#4e382c",
         },
       },
+      fontFamily: {
+        sans: ["'Nexa Bold'"],
+      },
     },
   },
 };
