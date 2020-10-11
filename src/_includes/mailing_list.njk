@@ -1,0 +1,26 @@
+<section class="relative inline-block text-4xl lg:text-5xl pointer-events-none">
+  <img src="/images/envelope_back.png" alt class="invisible w-envelope">
+  <img src="/images/envelope_shade.png" alt class="absolute top-0 w-envelope z-0 blend-multiply">
+  <img src="/images/envelope_back.png" alt class="absolute top-0 w-envelope z-10">
+  <img src="/images/envelope_front.png" alt class="absolute top-0 w-envelope z-30">
+
+
+  <form action="/api/mailinglist" method="POST" class="pointer-events-auto">
+    <div class="absolute top-1/12 bottom-1/12 text-center text-brown-900 text-xs md:text-sm lg:text-lg w-full z-20">
+      <div class="bg-paper mx-6 px-4 pt-6 h-full">
+        <label for="email" class="sr-only">Email</label>
+        <input type="email"
+               name="email"
+               required
+               id="email"
+               placeholder="youremail@example.com"
+               class="block bg-transparent w-full border-b-2 border-brown-900 text-sm placeholder-brown-200 px-2 py-1 mb-2">
+        Join our mailing list for updates!
+      </div>
+    </div>
+    <button type="submit" class="absolute cursor-pointer top-1/2 left-1/2 w-wax_seal_submit z-40 transform -translate-x-1/2">
+      <img src="/images/wax_seal_submit.png" alt="Submit" class="w-wax_seal_submit">
+    </button>
+  </form>
+
+</section>
