@@ -5,4 +5,10 @@ title: SB Hacks VII
 {% extends "layouts/base.njk" %}
 
 {% block body %}
+<main class="h-screen bg-gradient-to-b lg:p-10 from-sea-light to-sea-dark rendering-pixelated overflow-x-hidden">
+  <div class="h-full flex items-center justify-center flex-col lg:flex-row">
+    {% include "event_info.njk" %}
+    {% include "mailing_list.njk" %}
+  </div>
+</main>
 {% endblock %}
