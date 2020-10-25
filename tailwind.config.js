@@ -36,6 +36,7 @@ module.exports = {
           light: "#32a09d",
           dark: "#2c819e",
         },
+        seafoam: "#ecfff2",
         paper: "#ddcfba",
         brown: {
           200: "#af9d87",
