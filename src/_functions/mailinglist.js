@@ -10,6 +10,14 @@ const htmlResponse = fnt`
 </p>
 `;
 
+function response(type, message) {
+  if (type === "html") {
+    return htmlResponse(message);
+  }
+
+  return JSON.stringify({ message });
+}
+
 const api = axios.create({
   baseURL: process.env.API_URL,
 });
@@ -23,17 +31,23 @@ exports.handler = async (event, context) => {
   const contentType = event.headers["content-type"].toLowerCase();
   const body = event.body;
 
-  if (
-    method === "POST" &&
+  const type = contentType === "application/x-www-form-urlencoded" ? "html" : "json"
+
+  const userParams =
     contentType === "application/x-www-form-urlencoded"
-  ) {
+      ? qs.parse(body)
+      : contentType === "application/json"
+      ? JSON.parse(body)
+      : {};
+
+  if (method === "POST") {
     let params;
     try {
-      params = paramsSchema.parse(qs.parse(body));
+      params = paramsSchema.parse(userParams);
     } catch {
       return {
         statusCode: 422,
-        body: htmlResponse("Your request could not be processed."),
+        body: response(type, "Your request could not be processed."),
       };
     }
 
@@ -41,7 +55,7 @@ exports.handler = async (event, context) => {
 
     return {
       statusCode: 200,
-      body: htmlResponse(data.message),
+      body: response(type, data.message),
     };
   }
 
