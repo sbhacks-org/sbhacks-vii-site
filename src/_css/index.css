@@ -3,6 +3,41 @@
   src: url("/fonts/Nexa Bold.otf") format("opentype");
 }
 
+.float-logo-map-cloud {
+  animation: harmonic 8s infinite;
+  animation-timing-function: linear;
+}
+.float-cloud-back {
+  animation: harmonic 3s infinite;
+  animation-timing-function: linear;
+}
+
+.float-cloud-front {
+  animation: harmonic 6s infinite;
+  animation-timing-function: linear;
+}
+
+.w-wax_seal_submit_animation {
+  transition: transform 0.5s;
+}
+
+.w-wax_seal_submit_animation:hover {
+  transform: translateX(-50%) scale(1.2);
+}
+
+@keyframes harmonic {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-1%);
+  }
+  75% {
+    transform: translateX(1%);
+  }
+}
+
 @tailwind base;
 
 @tailwind components;
