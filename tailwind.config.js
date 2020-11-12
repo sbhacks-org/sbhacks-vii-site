@@ -35,7 +35,7 @@ module.exports = {
         sea: {
           light: "#32a09d",
           dark: "#2c819e",
-          darker: "#3966a6",
+          dark2: "#3966a6",
         },
         seafoam: "#ecfff2",
         paper: "#ddcfba",
