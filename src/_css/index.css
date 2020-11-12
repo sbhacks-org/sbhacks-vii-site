@@ -11,6 +11,10 @@
   transform: translateX(-50%) scale(1.15);
 }
 
+.indent {
+  text-indent: 1.5em;
+}
+
 @tailwind base;
 
 @tailwind components;
