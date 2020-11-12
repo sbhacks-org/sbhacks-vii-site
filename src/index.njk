@@ -5,12 +5,12 @@ title: SB Hacks VII
 {% extends "layouts/base.njk" %}
 
 {% block body %}
-<main class="h-screen bg-gradient-to-b lg:p-10 from-sea-light to-sea-dark rendering-pixelated overflow-x-hidden">
-  <div class="h-full flex items-center justify-center flex-col lg:flex-row">
+<main class="h-screen rendering-pixelated overflow-x-hidden">
+  <div class="lg:p-10 bg-gradient-to-b from-sea-light to-sea-dark h-full flex items-center justify-center flex-col lg:flex-row">
     {% include "event_info.njk" %}
     {% include "mailing_list.njk" %}
   </div>
-  <div class="lg:mt-24 md:mt-2 lg:-mr-24 pl-24 h-full flex items-center justify-center flex-col lg:flex-row">
+  <div class="h-screen bg-gradient-to-b from-sea-dark to-sea-darker lg:p-10 flex items-center justify-center flex-col lg:flex-row">
     {% include "about.njk" %}
     {% include "about_asset.njk" %}
   </div>
