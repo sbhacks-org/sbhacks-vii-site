@@ -6,13 +6,16 @@ title: SB Hacks VII
 
 {% block body %}
 <main class="h-screen rendering-pixelated overflow-x-hidden">
-  <div class="lg:p-10 bg-gradient-to-b from-sea-light to-sea-dark h-full flex items-center justify-center flex-col lg:flex-row">
+  <div class="lg:p-10 bg-gradient-to-b from-sea-100 to-sea-200 h-full flex items-center justify-center flex-col lg:flex-row">
     {% include "event_info.njk" %}
     {% include "mailing_list.njk" %}
   </div>
-  <div class="h-screen bg-gradient-to-b from-sea-dark to-sea-dark2 lg:px-10 xl:pt-24 lg:pt-24 md:pt-2 sm:pt-0  flex items-center justify-center flex-col lg:flex-row">
+  <div class="h-screen bg-gradient-to-b from-sea-200 to-sea-300 lg:px-10 xl:pt-24 lg:pt-24 md:pt-2 sm:pt-0  flex items-center justify-center flex-col lg:flex-row">
     {% include "about.njk" %}
     {% include "about_asset.njk" %}
+  </div>
+  <div class="h-screen bg-gradient-to-b from-sea-300 to-sea-400 flex items-center justify-center flex-col lg:flex-row">
+  	{% include "faq.njk" %}
   </div>
 </main>
 {% endblock %}

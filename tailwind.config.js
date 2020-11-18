@@ -18,6 +18,7 @@ defineAsset("cloud_back", 101);
 defineAsset("island", 133);
 defineAsset("envelope", 114);
 defineAsset("wax_seal_submit", 38);
+defineAsset("marker_static", 15);
 
 module.exports = {
   plugins: [
@@ -33,11 +34,13 @@ module.exports = {
     extend: {
       colors: {
         sea: {
-          light: "#32a09d",
-          dark: "#2c819e",
-          dark2: "#3966a6",
+          100: "#32a09d",
+          200: "#2c819e",
+          300: "#3966a6",
+          400: "#2e3590",
         },
         seafoam: "#ecfff2",
+        prismarine: "#cfe9d7",
         paper: "#ddcfba",
         brown: {
           200: "#af9d87",
