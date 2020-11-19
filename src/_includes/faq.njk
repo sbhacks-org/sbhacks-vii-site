@@ -2,31 +2,39 @@
 
 	<div class="text-seafoam text-3xl pb-6">FAQ</div>
 	<div class="relative w-full text-seafoam text-justify tracking-wide flex flex-wrap flex-col md:flex-row w-full">
-		<div class="faq-q lg:text-base lg:w-5/12">
-			<div>
-				What is a hackathon?
+		<div 
+			class="faq-q lg:text-base lg:w-5/12"
+			x-data="{show:false}"
+		>
+			<div 
+				@click="show = !show"
+				:aria-expanded="show ? 'true' : 'false"
+				:class="{'active': show}"
+			>
+				{{event_info.faq_info[0].q}}
 				<span>
 					<img src="/images/marker_static.png" alt class="w-marker_static inline-block mx-2">
 				</span>
 				<hr>
 			</div>
 
-			<div class="faq-a lg:text-sm">
-			    Hackathons are often described as a hybrid between a career fair and a science fair. A creative community of programmers - from novices to experienced - come together for 36 hours to make amazing projects. The projects are then judged by tech professionals from the industry and from academia.
+			<div class="faq-a lg:text-sm" x-show="show">
+			    {{event_info.faq_info[0].a}}
 			</div>
 
 		</div>
 		<div class="faq-q lg:text-base lg:w-5/12">
 			<div>
-				When and where is SB Hacks VII taking place?
+				{{event_info.faq_info[1].q}}
 				<hr>
 			</div>
 			<div class="faq-a lg:text-sm">
-			    SB Hacks VII will start on Friday, January 15, 2021, and conclude on Sunday, January 17, 2021. We are going virtual this year and will be using Hopin as our main event platform and Discord for communications.
+			    {{event_info.faq_info[1].a}}
 			</div>
 		</div>
-		<div class="text-sm lg:text-base w-full lg:w-5/12 flex-none mx-10">
-			Who can attend?
+		<div class="faq-q lg:text-base lg:w-5/12">
+			{{event_info.faq_info[2].q}}
+			<hr>
 		</div>
 
 	</div>
