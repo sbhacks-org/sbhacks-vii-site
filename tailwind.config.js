@@ -18,6 +18,7 @@ defineAsset("cloud_back", 101);
 defineAsset("island", 133);
 defineAsset("envelope", 114);
 defineAsset("wax_seal_submit", 38);
+defineAsset("santa_rosa", 132);
 
 module.exports = {
   plugins: [
