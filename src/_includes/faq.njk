@@ -2,40 +2,12 @@
 
 	<div class="text-seafoam text-3xl pb-6">FAQ</div>
 	<div class="relative w-full text-seafoam text-justify tracking-wide flex flex-wrap flex-col md:flex-row w-full">
-		<div 
-			class="faq-q lg:text-base lg:w-5/12"
-			x-data="{show:false}"
-		>
-			<div 
-				@click="show = !show"
-				:aria-expanded="show ? 'true' : 'false"
-				:class="{'active': show}"
-			>
-				{{event_info.faq_info[0].q}}
-				<span>
-					<img src="/images/marker_static.png" alt class="w-marker_static inline-block mx-2">
-				</span>
-				<hr>
-			</div>
 
-			<div class="faq-a lg:text-sm" x-show="show">
-			    {{event_info.faq_info[0].a}}
-			</div>
-
-		</div>
-		<div class="faq-q lg:text-base lg:w-5/12">
-			<div>
-				{{event_info.faq_info[1].q}}
-				<hr>
-			</div>
-			<div class="faq-a lg:text-sm">
-			    {{event_info.faq_info[1].a}}
-			</div>
-		</div>
-		<div class="faq-q lg:text-base lg:w-5/12">
-			{{event_info.faq_info[2].q}}
-			<hr>
-		</div>
+		{% for info in event_info.faq_info %}
+			{{
+				comp.qna_block(info)
+			}}
+		{% endfor %}
 
 	</div>
 

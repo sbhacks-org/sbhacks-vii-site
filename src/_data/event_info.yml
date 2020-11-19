@@ -14,6 +14,12 @@ faq_info:
   - q: "Can I compete in a team?"
     a: "Yes, the maximum is 4 people per team. If you do not enter with a team but would like to be in one, no worries! We are planning a team mixer before the event plus a team formation activity will also take place at the start of the hackathon."
   - q: "Are there any rules I should follow?"
-    a: "You can find the MLH code of conduct here."
+    a: "You can find the MLH code of conduct "
+    link:
+      url: "https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
+      text: "here."
   - q: "Any other questions?"
-    a: "Feel free to email us with any questions at team@sbhacks.com."
+    a: "Feel free to email us with any questions at "
+    link:
+      url: "mailto:team@sbhacks.com"
+      text: "team@sbhacks.com."

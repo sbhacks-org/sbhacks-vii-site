@@ -25,7 +25,7 @@
 
 @layer components {
   .faq-q {
-    @apply text-sm w-10/12 flex-none mx-10 my-5;
+    @apply text-sm w-10/12 flex-none mx-10 my-5 cursor-pointer;
   }
 
   .faq-a {

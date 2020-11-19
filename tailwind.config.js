@@ -18,7 +18,7 @@ defineAsset("cloud_back", 101);
 defineAsset("island", 133);
 defineAsset("envelope", 114);
 defineAsset("wax_seal_submit", 38);
-defineAsset("marker_static", 15);
+defineAsset("marker_static", 5);
 
 module.exports = {
   plugins: [
@@ -29,6 +29,11 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
     purgeLayersByDefault: true,
+  },
+  variants: {
+    extend: {
+      animation: ["hover"],
+    },
   },
   theme: {
     extend: {
@@ -41,6 +46,7 @@ module.exports = {
         },
         seafoam: "#ecfff2",
         prismarine: "#cfe9d7",
+        highlight: "#fe7087",
         paper: "#ddcfba",
         brown: {
           200: "#af9d87",
