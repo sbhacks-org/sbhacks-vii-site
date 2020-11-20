@@ -19,6 +19,7 @@ defineAsset("island", 133);
 defineAsset("envelope", 114);
 defineAsset("wax_seal_submit", 38);
 defineAsset("santa_rosa", 126);
+defineAsset("social_media_icon", 16);
 
 module.exports = {
   plugins: [
