@@ -43,6 +43,7 @@ module.exports = {
           200: "#2c819e",
           300: "#3966a6",
           400: "#2e3590",
+          500: "#4d3967",
         },
         seafoam: "#ecfff2",
         prismarine: "#cfe9d7",
