@@ -46,7 +46,7 @@ module.exports = {
         },
         seafoam: "#ecfff2",
         prismarine: "#cfe9d7",
-        highlight: "#fe7087",
+        highlight: "#eed067",
         paper: "#ddcfba",
         brown: {
           200: "#af9d87",
