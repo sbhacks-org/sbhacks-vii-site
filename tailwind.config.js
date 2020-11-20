@@ -21,6 +21,7 @@ defineAsset("wax_seal_submit", 38);
 defineAsset("wheel", 27);
 defineAsset("anchor", 27);
 defineAsset("sailor_otter_telescope", 38);
+defineAsset("santa_rosa", 126);
 
 module.exports = {
   plugins: [
@@ -38,6 +39,7 @@ module.exports = {
         sea: {
           light: "#32a09d",
           dark: "#2c819e",
+          dark2: "#3966a6",
         },
         seafoam: "#ecfff2",
         paper: "#ddcfba",

@@ -16,3 +16,9 @@
 @tailwind components;
 
 @tailwind utilities;
+
+@layer utilities {
+  .indent {
+    text-indent: 1.5em;
+  }
+}
