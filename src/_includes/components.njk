@@ -1,13 +1,13 @@
 
 {% macro qna_block(info, kwargs) %}
 <div 
-	class="faq-q lg:text-base lg:w-5/12"
+	class="faq-q lg:mx-8 lg:w-5/12"
 	x-data="{show:false}"
 	@click="show = !show"
 	:aria-expanded="show ? 'true' : 'false'"
 	:class="{'active': show}"
 >
-	<div class="hover:animate-pulse">
+	<div class="hover:animate-pulse hover:bg-white-opac-10">
 		{{info.q}}
 		<span class="text-4xl align-middle">
 			<img alt 
@@ -18,7 +18,7 @@
 		<hr>
 	</div>
 
-	<div class="faq-a lg:text-sm" x-show.transition.duration.300ms="show">
+	<div class="faq-a" x-show.transition.duration.300ms="show">
 	    {{info.a}}
 	    {% if info.link %}
 			<a href={{info.link.url}} class="text-highlight">{{info.link.text}}</a>
