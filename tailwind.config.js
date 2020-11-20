@@ -18,6 +18,9 @@ defineAsset("cloud_back", 101);
 defineAsset("island", 133);
 defineAsset("envelope", 114);
 defineAsset("wax_seal_submit", 38);
+defineAsset("wheel", 27);
+defineAsset("anchor", 27);
+defineAsset("sailor_otter_telescope", 38);
 defineAsset("santa_rosa", 126);
 
 module.exports = {
@@ -43,6 +46,10 @@ module.exports = {
         brown: {
           200: "#af9d87",
           900: "#4e382c",
+        },
+        button: {
+          red: "#d37676",
+          blue: "#316cb0",
         },
       },
       fontFamily: {
