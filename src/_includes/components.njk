@@ -1,5 +1,5 @@
 
-{% macro qna_block(info, kwargs) %}
+{% macro qna_block(info) %}
 <div 
 	class="faq-q lg:mx-8 lg:w-5/12"
 	x-data="{show:false}"
@@ -26,4 +26,10 @@
 	</div>
 
 </div>
+{% endmacro %}
+
+{% macro social_media_handle(platform) %}
+<a href={{platform.url}} class="text-3xl hover:bg-white hover:bg-opacity-25">
+	<img src="images/icon_{{platform.name}}.png" alt class="w-social_media_icon m-3 transform hover:scale-105">
+</a>
 {% endmacro %}

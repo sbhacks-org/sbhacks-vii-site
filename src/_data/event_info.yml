@@ -23,3 +23,14 @@ faq_info:
     link:
       url: "mailto:team@sbhacks.com"
       text: "team@sbhacks.com."
+social_media_info:
+  - name: "email"
+    url: "mailto:team@sbhacks.com"
+  - name: "facebook"
+    url: "https://facebook.com/ucsbhacks"
+  - name: "instagram"
+    url: "https://instagram.com/sbhacks"
+  - name: "twitter"
+    url: "https://twitter.com/sb_hacks"
+  - name: "medium"
+    url: "https://medium.com/@ucsbhacks"
