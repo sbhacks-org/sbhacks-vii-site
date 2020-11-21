@@ -22,3 +22,13 @@
     text-indent: 1.5em;
   }
 }
+
+@layer components {
+  .faq-q {
+    @apply text-sm w-full flex-none my-3 cursor-pointer;
+  }
+
+  .faq-a {
+    @apply text-xs text-prismarine my-2;
+  }
+}

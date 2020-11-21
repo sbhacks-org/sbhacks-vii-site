@@ -1,0 +1,14 @@
+<section class="relative inline-block w-8/12 lg:w-10/12 mx-2/12 lg:mx-1/12 mb-3/12 lg:mb-1/12">
+
+	<div class="text-seafoam text-3xl pb-6">FAQ</div>
+	<div class="relative w-full text-seafoam text-justify tracking-wide flex flex-wrap flex-col md:flex-row w-full">
+
+		{% for info in event_info.faq_info %}
+			{{
+				comp.qna_block(info)
+			}}
+		{% endfor %}
+
+	</div>
+
+</section>
