@@ -62,6 +62,9 @@ module.exports = {
           blue: "#316cb0",
         },
       },
+      backgroundOpacity: {
+        10: ".1",
+      },
       fontFamily: {
         sans: ["'Nexa Bold'"],
       },
