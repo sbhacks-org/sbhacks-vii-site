@@ -23,6 +23,7 @@ defineAsset("wheel", 27);
 defineAsset("anchor", 27);
 defineAsset("sailor_otter_telescope", 38);
 defineAsset("santa_rosa", 126);
+defineAsset("social_media_icon", 16);
 
 module.exports = {
   plugins: [

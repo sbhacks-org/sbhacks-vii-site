@@ -7,6 +7,9 @@ title: SB Hacks VII
 
 {% block body %}
 <main class="h-screen rendering-pixelated overflow-x-hidden">
+	<div class="fixed z-50 flex flex-row md:flex-col left-1/2 md:left-0 transform -translate-x-1/2 md:translate-x-0 bottom-0 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:ml-3">
+		{% include "social_media.njk" %}
+	</div>
   <div class="lg:p-10 bg-gradient-to-b from-sea-100 to-sea-200 h-full flex items-center justify-center flex-col lg:flex-row">
     {% include "event_info.njk" %}
     {% include "apply_buttons.njk" %}
