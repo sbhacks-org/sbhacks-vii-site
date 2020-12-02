@@ -25,6 +25,19 @@ defineAsset("sailor_otter_telescope", 38);
 defineAsset("santa_rosa", 126);
 defineAsset("social_media_icon", 16);
 
+defineAsset("firebase_logo", 110);
+// defineAsset("invoca_logo", 126);
+defineAsset("teladoc_logo", 80);
+// defineAsset("coe_logo", 70);
+
+defineAsset("stacks_logo", 60);
+defineAsset("atcompany_logo", 80);
+
+defineAsset("corsair_logo", 40);
+defineAsset("replit_logo", 40);
+// defineAsset("axure_logo", 126);
+// defineAsset("replit_logo", 126);
+
 module.exports = {
   plugins: [
     require("@tailwindcss/ui"),
