@@ -25,18 +25,18 @@ defineAsset("sailor_otter_telescope", 38);
 defineAsset("santa_rosa", 126);
 defineAsset("social_media_icon", 16);
 
-defineAsset("firebase_logo", 110);
-// defineAsset("invoca_logo", 126);
-defineAsset("teladoc_logo", 80);
-// defineAsset("coe_logo", 70);
+defineAsset("firebase_logo", 133);
+defineAsset("invoca_logo", 98);
+defineAsset("teladoc_logo", 85);
+defineAsset("coe_logo", 92);
 
-defineAsset("stacks_logo", 60);
-defineAsset("atcompany_logo", 80);
+defineAsset("stacks_logo", 58);
+defineAsset("atcompany_logo", 85);
 
-defineAsset("corsair_logo", 40);
-defineAsset("replit_logo", 40);
-// defineAsset("axure_logo", 126);
-// defineAsset("replit_logo", 126);
+defineAsset("corsair_logo", 35);
+defineAsset("replit_logo", 35);
+defineAsset("axure_logo", 35);
+defineAsset("rstudio_logo", 35);
 
 module.exports = {
   plugins: [
