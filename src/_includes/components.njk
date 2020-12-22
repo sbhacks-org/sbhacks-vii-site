@@ -33,3 +33,26 @@
 	<img src="images/icon_{{platform.name}}.png" alt class="w-social_media_icon m-3 transform hover:scale-105">
 </a>
 {% endmacro %}
+
+{% macro sponsor_tier(sponsors, lg=0, md=0, sm=0) %}
+{% if lg %}
+<div class="sponsor-tier md:flex-row text-6xl">
+	{% for sponsor in sponsors %}
+	<a href={{sponsor.url}} target="_blank" class="transform hover:scale-105"> <img src="/images/sponsors/{{sponsor.logo}}" alt class="w-96 md:mx-10 my-10"> </a>
+	{% endfor %}
+</div>
+{% elif md %}
+<div class="sponsor-tier md:flex-row text-5xl lg:text-6xl">
+	{% for sponsor in sponsors %}
+	<a href={{sponsor.url}} target="_blank" class="transform hover:scale-105"> <img src="/images/sponsors/{{sponsor.logo}}" alt class="w-72 md:mx-10 my-8 lg:my-10"> </a>
+	{% endfor %}
+</div>
+{% elif sm %}
+<div class="sponsor-tier md:flex-row text-5xl lg:text-6xl">
+	{% for sponsor in sponsors %}
+	<a href={{sponsor.url}} target="_blank" class="transform hover:scale-105"> <img src="/images/sponsors/{{sponsor.logo}}" alt class="w-40 md:mx-10 my-8 lg:my-10"> </a>
+	{% endfor %}
+</div>
+{% endif %}
+
+{% endmacro %}

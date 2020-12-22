@@ -31,4 +31,8 @@
   .faq-a {
     @apply text-xs text-prismarine my-2;
   }
+
+  .sponsor-tier {
+    @apply flex flex-col flex-wrap items-center justify-center w-full transition-transform duration-500 ease-in-out;
+  }
 }
