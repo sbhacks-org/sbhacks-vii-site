@@ -22,6 +22,7 @@
   "dependencies": {
     "@11ty/eleventy": "^0.11.0",
     "axios": "^0.20.0",
+    "flickity": "^2.2.1",
     "fntstring": "^1.5.0",
     "qs": "^6.9.4",
     "zod": "^1.11.9"
