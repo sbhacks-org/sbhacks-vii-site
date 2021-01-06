@@ -74,3 +74,6 @@ sponsors:
     - name: "rstudio"
       url: "https://rstudio.com/"
       logo: "rstudio.png"
+    - name: "CCS"
+      url: "https://ccs.ucsb.edu/"
+      logo: "CCS.png"
