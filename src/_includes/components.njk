@@ -60,9 +60,9 @@
 {% macro carousel_cell(sponsors) %}
 	{% for sponsor in sponsors %}
 		{% if sponsor.blurb != "none" %}
-			<div class="carousel-cell px-2 md:px-10 md:text-xs text-seafoam flex flex-col md:flex-row justify-center">
-				<img src="/images/sponsors/{{sponsor.logo}}" alt class="mb-5 md:mb-0 mx-0 md:mx-4 w-80">
-				<div class="carousel-cell-text md:flex-auto px-0 md:px-10 ml-0 md:ml-10 leading-8">{{sponsor.blurb}}</div>
+			<div class="carousel-cell px-2 lg:px-10 text-xs text-seafoam flex flex-col lg:flex-row justify-center">
+				<img src="/images/sponsors/{{sponsor.logo}}" alt class="mb-5 lg:mb-0 mx-0 lg:mx-4 w-80">
+				<div class="text-center lg:text-left carousel-cell-text lg:flex-auto px-2 lg:px-10 ml-0 lg:ml-10 leading-8">{{sponsor.blurb}}</div>
 			</div>
 		{% endif %}
 	{% endfor %}
