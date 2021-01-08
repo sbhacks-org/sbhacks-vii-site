@@ -45,8 +45,8 @@
   768 default */
   .carousel-cell {
     width: 100%;
-    height: 400px;
-    max-height: 400px;
+    height: 1000px;
+    max-height: 1000px;
   }
   .carousel-cell img {
     max-width: 50%;
