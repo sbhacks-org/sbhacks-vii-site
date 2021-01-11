@@ -60,6 +60,9 @@ sponsors:
       url: "https://atsign.com/"
       logo: "atcompany_white.svg"
   tier_1:
+    - name: "evidation"
+      url: "http://www.evidation.com/"
+      logo: "evidation.png"
     - name: "corsair"
       url: "https://www.corsair.com/"
       logo: "corsair_white.png"
