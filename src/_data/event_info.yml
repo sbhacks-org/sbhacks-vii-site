@@ -59,6 +59,9 @@ sponsors:
     - name: "atcompany"
       url: "https://atsign.com/"
       logo: "atcompany_white.svg"
+    - name: "Amazon Alexa - SB"
+      url: "https://www.aboutamazon.com/about-us"
+      logo: "palm_tree_SB_logo.png"
   tier_1:
     - name: "evidation"
       url: "http://www.evidation.com/"
@@ -87,3 +90,6 @@ sponsors:
     - name: "Associated Students Finance & Business Committee"
       url: "https://asfb.as.ucsb.edu/"
       logo: "as_fnb.svg"
+    - name: "Google Cloud Platfrom"
+      url: "https://cloud.google.com/"
+      logo: "gcp_white.png"
